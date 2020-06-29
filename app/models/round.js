@@ -1,12 +1,16 @@
 const mongoose = require('mongoose')
 
-const exampleSchema = new mongoose.Schema({
-  title: {
+const roundSchema = new mongoose.Schema({
+  course: {
     type: String,
     required: true
   },
-  text: {
-    type: String,
+  date: {
+    type: Date,
+    required: true
+  },
+  score: {
+    type: Number,
     required: true
   },
   owner: {
@@ -18,4 +22,4 @@ const exampleSchema = new mongoose.Schema({
   timestamps: true
 })
 
-module.exports = mongoose.model('Example', exampleSchema)
+module.exports = mongoose.model('Round', roundSchema)
