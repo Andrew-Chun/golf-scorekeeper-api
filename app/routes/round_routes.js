@@ -15,6 +15,7 @@ const router = express.Router()
 // GET /rounds
 router.get('/rounds', requireToken, (req, res, next) => {
   Round.find({'owner': req.user.id})
+    .populate('owner')
     .then(rounds => {
       return rounds.map(round => round.toObject())
     })
@@ -37,6 +38,7 @@ router.post('/rounds', requireToken, (req, res, next) => {
   req.body.round.owner = req.user.id
 
   Round.create(req.body.round)
+    .populate('owner')
     .then(round => {
       res.status(201).json({ round: round.toObject() })
     })
