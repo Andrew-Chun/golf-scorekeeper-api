@@ -13,6 +13,10 @@ const roundSchema = new mongoose.Schema({
     type: String,
     required: true
   },
+  par: {
+    type: Number,
+    required: true
+  },
   score: {
     type: Number,
     required: true

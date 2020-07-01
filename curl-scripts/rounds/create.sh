@@ -11,8 +11,9 @@ curl "${API}${URL_PATH}" \
   --data '{
     "round": {
       "course": "'"${COURSE}"'",
-      location: "'"${LOCATION}"'",
+      "location": "'"${LOCATION}"'",
       "date": "'"${DATE}"'",
+      "par": "'"${PAR}"'",
       "score": "'"${SCORE}"'"
     }
   }'
