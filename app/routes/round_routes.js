@@ -38,7 +38,6 @@ router.post('/rounds', requireToken, (req, res, next) => {
   req.body.round.owner = req.user.id
 
   Round.create(req.body.round)
-    .populate('owner')
     .then(round => {
       res.status(201).json({ round: round.toObject() })
     })
