@@ -18,4 +18,4 @@ A password-protected backend API utilizing Express with Mongoose and MongoDB tha
 - Enabling comments between users
 
 ## Entity Relationship Diagram
-[User-Rounds ERD](https://i.imgur.com/7Wbo0EW.jpg)
+[User-Round ERD](https://i.imgur.com/wIjWYVo.png)
