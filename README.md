@@ -3,6 +3,10 @@
 # Golf Scorekeeper API
 A password-protected backend API utilizing Express with Mongoose and MongoDB that enables authenticated users to CRUD their rounds of golf.
 
+## Links
+Heroku API: https://golf-scorekeeper-api.herokuapp.com/
+Deployed Client Application: https://andrew-chun.github.io/golf-scorekeeper-client/
+
 ## Technologies Used
 - Express
 - Mongoose
